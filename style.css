@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4faff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #0077cc;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section { padding: 60px; text-align: center; }
+
+.home {
+    padding: 120px 20px;
+    color: white;
+    background: linear-gradient(to right, #0077cc, #00aaff);
+}
+
+.card {
+    width: 260px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ddd;
+}
+
+form input, form textarea {
+    width: 300px;
+    padding: 12px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 22px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover { background: #005fa3; }
+
+.success { color: green; }
+
+.error { color: red; }
+
+.hidden { display: none; }
+
+/* Dashboard Table */
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #0077cc;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.approve { background: #00c851; color: white; }
+.collect { background: #ffbb33; color: black; }
+.delete { background: #cc0000; color: white; }
