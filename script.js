@@ -47,7 +47,7 @@ document.getElementById("requestForm").addEventListener("submit", function(e) {
     requests.push(req);
     saveRequests();
 
-    document.getElementById("successMessage").innerText = "Request submitted!";
+    document.getElementById("successMessage").innerText = " ጥያቄዎት ገብቷል!";
 });
 
 // Admin login
@@ -68,14 +68,14 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
 
 // Approve request
 function approveRequest(i) {
-    requests[i].status = "Approved";
+    requests[i].status = "የተረጋገጠ";
     saveRequests();
     loadRequests();
 }
 
 // Mark collected
 function markCollected(i) {
-    requests[i].status = "Collected";
+    requests[i].status = "ተሰብስቧል";
     saveRequests();
     loadRequests();
 }
@@ -92,3 +92,4 @@ function logout() {
     dashboard.classList.add("hidden");
     login.classList.remove("hidden");
 }
+
